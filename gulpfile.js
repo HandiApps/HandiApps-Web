@@ -3,6 +3,11 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var jsmin = require('gulp-jsmin');
 
+gulp.task('index', function() {
+	return gulp.src('index.html')
+	  .pipe(gulp.dest('dist'));
+});
+
 gulp.task('js', function () {
 	return gulp.src('app/js/**/*.js')
 		.pipe(concat('main.js'))
@@ -28,8 +33,8 @@ gulp.task('extra-css', function () {
 gulp.task('extra', ['extra-js','extra-css']);
 
 // gulp.task('build', ['copy','js','style','browserify']);
-gulp.task('build', ['js','style', 'extra']);
+gulp.task('build', ['index','js','style', 'extra']);
 
 gulp.task('build:watch', function () {
-	gulp.watch(['dist/*.html','app/**/*.*'],['js','style']);
+	gulp.watch(['**/*.html','app/**/*.*'],['index','js','style']);
 });
