@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var jsmin = require('gulp-jsmin');
 
 gulp.task('index', function() {
-	return gulp.src('index.html')
+	return gulp.src('app/index.html')
 	  .pipe(gulp.dest('dist'));
 });
 
