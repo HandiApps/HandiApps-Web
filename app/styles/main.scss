@@ -15,8 +15,13 @@ body{
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
+
+    &#proyectos{
+      margin-bottom:15px;
+    }
+
     .content {
-      padding-top: 60px;
+      padding-top: 15px;
       .segment {
         text-align: left;
         background-color: #00B4CC;
