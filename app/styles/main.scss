@@ -1,8 +1,20 @@
+//Colores
+$company-name-color: #FFA356;
+$header-background-color: #202B23;
+$footer-background-color: #202B23;
+$background-color: #D6FFBC;
+$title-font-color: #2E4E37;
+$title-description-font-color: #2E4E37;
+$normal-font-color: #2E4E37;
+
+$button-background-color: #243F2E;
+$button-font-color: #FFFFFF;
+//SHUSHETU
 body{
   margin: 0;
   padding: 0;
   color: #FFFFFF;
-  background-color: #00B4CC;
+  background-color: $background-color;
   #main{
     max-width: 980px;
     margin: 0 auto;
@@ -15,21 +27,43 @@ body{
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
+
+    &#proyectos{
+      margin-bottom:15px;
+    }
+
     .content {
-      padding-top: 60px;
+      padding-top: 15px;
       .segment {
         text-align: left;
-        background-color: #00B4CC;
+        //background-color: $background-color;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px rgba(0, 0, 0, .2) solid;
       }
     }
   }
   .cover {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #343838;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $header-background-color;
+    height: 280px;
+    //padding-left: 300px;
+    //padding-right: 300px;
+
     h1{
       padding-top: 0px;
       font-size: 60pt;
+    }
+
+    h2{
+      padding-top: 1px;
+      padding-bottom: 1px;
+      margin: 0px 0px 0px 0px;
+    }
+
+    h3{
+      margin: 0px 0px 0px 0px;
     }
     img{
       height: 300px;
@@ -38,7 +72,7 @@ body{
   .foot {
     padding-top: 5px;
     padding-bottom: 10px;
-    background-color: #343838;
+    background-color: $footer-background-color;
     text-align: center;
     h1{
       margin-top:-20px;
@@ -52,7 +86,7 @@ body{
     z-index: 10;
     margin-top: -5px;
     .menu{
-      background-color: #343838;
+      background-color: $header-background-color;
       -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
       -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
       box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -62,14 +96,31 @@ body{
     }
   }
   .text {
-    &.primary {
-      color: #00B4CC;
+    &.title {
+      color: $title-font-color;
     }
-    &.secondary {
-      color: #005F6B;
+    &.title-description {
+      color: $title-description-font-color;
+    }
+    &.normal{
+      color: $normal-font-color;
+    }
+    &.company-title{
+      color: $company-name-color;
     }
   }
   .personel{
     text-align: center;
+  }
+
+  .fb-page{
+    border-radius: 20px;
+    margin-top: 10px;
+    border-color: grey;
+  }
+
+  .ui.label{
+    color: $button-font-color;
+    background-color: $button-background-color;
   }
 }

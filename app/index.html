@@ -2,25 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HandiApps</title>
+  <title>HandiApps - Aplicaciones para discapacitados</title>
   <link rel="stylesheet" type="text/css" href="style/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="style/main.css">
   <script src="js/extra.js"></script>
   <script src="js/main.js"></script>
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
+
 </head>
 <body>
+  <!-- FACEBOOK PAGE -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- END FACEBOOK PAGE -->
+
   <div class="cover">
-    <div class="content ui page grid">
+    <div class="content ui page grid  center aligned">
+      <!--
       <div class="six wide column center aligned">
         <img src="http://www.paypanther.com/wp-content/uploads/2013/06/your-logo-here.png">
       </div>
+      -->
       <div class="ten wide column center aligned">
-        <h1 id="title" class="primary text" >HandiApps</h1>
+        <h1 id="title" class="company-title text" >HandiApps</h1>
         <h2>
           Aplicaciones para la inclusión de discapacitados.
         </h2>
         <h3>
-          Nos preocupamos por la inclusión de personas con diversas discapacidades para aumentar la igualdad de oportunidades y permitirles llevar una vida normal.
+          Nos preocupamos por la inclusión de personas con diversas discapacidades para aumentar la igualdad de oportunidades y permitirles llevar una vida más autónoma y plena.
         </h3>
 
       </div>
@@ -31,15 +48,16 @@
       <div class="ui inverted fluid six item large borderless menu">
         <a class="item" href="#">
           <i class="asd large icon"></i>
-          <b id="navtitle" class="primary text">HandiApps</b>
+          <b id="navtitle" class="">HandiApps</b>
         </a>
         <p class="item"></p>
         <p class="item"></p>
-        <a class="item" href="#nosotros">
-          Nosotros
-        </a>
+        
         <a class="item" href="#proyectos">
           Proyectos
+        </a>
+        <a class="item" href="#nosotros">
+          Nosotros
         </a>
         <a class="item" href="#contacto">
           Contáctanos
@@ -48,13 +66,48 @@
     </div>
   </div>
   <div id="main" class="ui page">
+    <div class="section" id="proyectos">
+      <div class="content center aligned">
+        <div class="header center aligned">
+          <h1 class="title text">Nuestros Proyectos</h1>
+          <h3 class="title-description text">
+            Debido al constante contacto con todos los integrantes de la sociedad actual y a la alianza con la Biblioteca Central de ciegos..hoy nos acomplace presentar Money$canner
+          </h3>
+        </div>
+
+        <div class="ui segment">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="/img/logo-msc.png">
+              </div>
+              <div class="content">
+                <h2 class="normal text">Money$canner</h4>
+                <h4 class="normal text">
+                  <span><b>Reconocedor de billetes para discapacitados visuales</b></span>
+                </h4>
+                <div class="normal text">
+                    Money$canner es una app para dispositivos móviles android capaz de reconocer billetes latinoamericanos, revisar si el vuelto entregado es el correcto e informar la conversión monetaria al usuario al instante! Es la primera aplicación de este tipo en el mercado!
+                </div>
+                <h4 class = "normal text">¿Cómo se usa?</h4>
+                <div class="normal text">
+                  Sólo tienes que abrir la aplicación, seleccionar la opción "Detectar" y bastará con situar un billete frente a la camará del celular para que el software mediante voz indique el valor del papel moneda. Así de simple!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="ui divider"></div>
     <div class="section" id="nosotros">
       <div class="content ui centered grid">
 
         <div class="sixteen wide column center aligned">
-          <h1 class="center aligned">Nosotros somos HandiApps</h1>
-          <h3 class="center aligned secondary text">
-            Somos un equipo de estudiantes cursando cuarto año de ingeniería civil informática de la UTFSM.   
+          <h1 class="center aligned title text">Nosotros somos HandiApps</h1>
+          <h3 class="center aligned title-description text">
+            Somos un equipo de estudiantes cursando cuarto año de ingeniería civil informática en la Universidad Técnica Federico Santa María. Creemos fuertemente que todas las personas tienen el derecho de hacer su vida de manera autónoma y segura, para lo cual proponemos múltiples soluciones informáticas para gente con mayores dificultades físicas y psicológicas
           </h3>
         </div>
 
@@ -77,60 +130,60 @@
 
             <div class="card personel">
               <div class="image">
-                <img src="http://www.worldacademy.tv/sa/images/dafault_profile_pic.png">
+                <img src="img/pipe.jpg">
               </div>
               <div class="content">
                 <a class="header" href="mailto:felipe.gonzalez@handiapps.cl"><p>Felipe</p> González</a>
                 <div class="meta">
-                  <span class="date">Jefe de Proyectos</span>
+                  <span class="date">Jefe de Proyecto</span>
                 </div>
               </div>
             </div>
 
             <div class="card personel">
               <div class="image">
-                <img src="http://www.worldacademy.tv/sa/images/dafault_profile_pic.png">
+                <img src="img/jose.jpg">
               </div>
               <div class="content">
                 <a class="header" href="mailto:jose.castro@handiapps.cl"><p>José</p> Castro</a>
                 <div class="meta">
-                  <span class="date">Full stack developer</span>
+                  <span class="date">Desarrollador full stack</span>
                 </div>
               </div>
             </div>
 
             <div class="card personel">
               <div class="image">
-                <img src="http://www.worldacademy.tv/sa/images/dafault_profile_pic.png">
+                <img src="img/sven.jpg">
               </div>
               <div class="content">
                 <a class="header" href="mailto:sven.hollstein@handiapps.cl"><p>Sven</p> Hollstein</a>
                 <div class="meta">
-                  <span class="date">Front end developer</span>
+                  <span class="date">Analista y Tester</span>
                 </div>
               </div>
             </div>
 
             <div class="card personel">
               <div class="image">
-                <img src="http://www.worldacademy.tv/sa/images/dafault_profile_pic.png">
+                <img src="img/felipe.jpg">
               </div>
               <div class="content">
                 <a class="header" href="mailto:felipe.morales@handiapps.cl"><p>Felipe</p> Morales</a>
                 <div class="meta">
-                  <span class="date">Back end developer</span>
+                  <span class="date">Desarrollador backend y DBA</span>
                 </div>
               </div>
             </div>
 
             <div class="card personel">
               <div class="image">
-                <img src="http://www.worldacademy.tv/sa/images/dafault_profile_pic.png">
+                <img src="img/javier.jpg">
               </div>
               <div class="content">
                 <a class="header" href="mailto:javier.reyes@handiapps.cl"><p>Javier</p> Reyes</a>
                 <div class="meta">
-                  <span class="date">Back end developer</span>
+                  <span class="date">Desarrollador backend</span>
                 </div>
               </div>
             </div>
@@ -139,59 +192,37 @@
         </div>
 
       </div>
-    </div>
-
-    <div class="ui divider"></div>
-
-    <div class="section" id="proyectos">
-      <div class="content center aligned">
-        <div class="header center aligned">
-          <h1>Nuestros Proyectos</h1>
-          <h3 class="secondary text">
-            Debido a que HandiApps surgió como parte de un ramo en nuestra universidad, solo contamos con un proyecto pero blabalbla.... 
-          </h3>
-        </div>
-
-        <div class="ui segment">
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="/img/logo-msc.png">
-              </div>
-              <div class="content">
-                <a href='/moneyscanner' class="header">Money$canner</a>
-                <div class="meta">
-                  <span>Reconocedor de billetes</span>
-                </div>
-                <div class="description">
-                    Money$canner corresponde a una aplicación móvil desarrollada inicialmente en Android y enfocada en las  personas que padecen de algún grado de discapacidad visual.  El objetivo consiste en  entregar  poder y dar mayor autonomía a este segmento de la población que se ve con una gran cantidad de dificultades a la hora de realizar transacciones comerciales. Para aquello la aplicación reconocerá billetes y monedas tanto de Chile como del extranjero. Junto a lo anterior contendrá un convertidor monetario facilitando la vida a los turistas y además tendrá la funcionalidad de revisar si el vuelto entregado al usuario es el correcto, evitando fraudes y malos entendidos. 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    </div>    
 
     <div class="ui divider"></div>
 
     <div class="section" id="contacto">
       <div class="content center aligned">
         <div class="header center aligned">
-          <h1>¿Quieres Contactarnos?</h1>
-          <h3 class="secondary text">
-            Si estás interesado en alguno de nuestros proyectos, quieres proponernos algo o simplemente hablarnos, ¡contactanos!
+          <h1 class="title text">¿Quieres Contactarnos?</h1>
+          <h3 class="title description text">
+            Si estás interesado en alguno de nuestros proyectos, quieres proponernos algo o simplemente hablarnos, ¡Contáctanos!
           </h3>
 
           <a href="mailto:contacto@handiapps.cl?subject=contacto" class="ui huge label">
             <i class="mail icon"></i> contacto@handiapps.cl
           </a>
 
-          <div class="ui huge label">
+          <a href="#" class="ui huge label">
             <i class="call icon"></i> (+569) 9 939 28 60
-          </div>
+          </a>
         </div>
+
+        <!-- FB  -->
+        <div class="header center aligned">
+          <h1 class="title text"> ¡Búscanos en facebook!</h1>
+          <h3 class="title description text">Comparte esta gran idea en tu red social favorita</h3>
+
+
+          <div class="fb-page" data-href="https://www.facebook.com/handiapps" data-width="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/handiapps"><a href="https://www.facebook.com/handiapps">HandiApps</a></blockquote></div></div>
+
+        </div>
+        <!-- End FB -->
 
       </div>
     </div>
@@ -199,7 +230,7 @@
   </div>
 
   <div class="foot center aligned">
-    <h3 class="primary text">Copyright © 2015 HandiApps</h3>
+    <h3 class="company-title text">Copyright © 2015 HandiApps</h3>
   </div>
 
 </body>
