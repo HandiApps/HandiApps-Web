@@ -1,26 +1,23 @@
 //Colores
-$company-name-color: #FFA356;
-$header-background-color: #202B23;
-$footer-background-color: #202B23;
-$background-color: #D6FFBC;
-$title-font-color: #2E4E37;
-$title-description-font-color: #2E4E37;
-$normal-font-color: #2E4E37;
+$company-name-color: #CC333F;
+$header-background-color: #ABEEF5;
+$footer-background-color: #ABEEF5;
+$background-color: #00A0B0;
+$title-font-color: #6A4A3C;
+$title-description-font-color: #6A4A3C;
+$normal-font-color: #6A4A3C;
 
-$button-background-color: #243F2E;
-$button-font-color: #FFFFFF;
+$button-background-color: $header-background-color;
+$button-font-color: $normal-font-color;
 //SHUSHETU
 body{
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
+  color: $title-description-font-color;
   background-color: $background-color;
   #main{
     max-width: 980px;
     margin: 0 auto;
-  }
-  a.header:hover{
-    color: #BDBDBD !important;
   }
   .section{
     text-align: center;
@@ -37,7 +34,7 @@ body{
       .segment {
         text-align: left;
         //background-color: $background-color;
-        background-color: white;
+        background-color: $header-background-color;
         border-radius: 20px;
         border: 1px rgba(0, 0, 0, .2) solid;
       }
@@ -69,6 +66,18 @@ body{
       height: 300px;
     }
   }
+  #nosotros {
+    .card.personel {
+      background-color: $header-background-color;
+      a{
+        color: $title-font-color;
+      }
+      .date {
+        min-height: 3em;
+        margin: 10px auto;
+      }
+    }
+  }
   .foot {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -91,7 +100,11 @@ body{
       -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
       box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
       #navtitle{
-        // display: none;
+        display: none;
+        color: $company-name-color;
+      }
+      a.item {
+        color: $title-description-font-color;
       }
     }
   }
