@@ -3,7 +3,7 @@ $company-name-color: #CC333F;
 $header-background-color: #ABEEF5;
 $footer-background-color: #ABEEF5;
 $background-color: #00A0B0;
-$title-font-color: #6A4A3C;
+$title-font-color: #ECC85B;
 $title-description-font-color: #6A4A3C;
 $normal-font-color: #6A4A3C;
 
@@ -27,6 +27,18 @@ body{
 
     &#proyectos{
       margin-bottom:15px;
+      
+      #moneyscanner {
+        text-align: center;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        .video {
+          margin-top: 30px;
+        }
+      }
+
     }
 
     .content {
@@ -70,12 +82,15 @@ body{
     .card.personel {
       background-color: $header-background-color;
       a{
-        color: $title-font-color;
+        color: $title-description-font-color;
       }
       .date {
         min-height: 3em;
         margin: 10px auto;
       }
+    }
+    .title-description {
+      color: $title-font-color;
     }
   }
   .foot {
@@ -124,12 +139,6 @@ body{
   }
   .personel{
     text-align: center;
-  }
-
-  .fb-page{
-    border-radius: 20px;
-    margin-top: 10px;
-    border-color: grey;
   }
 
   .ui.label{
