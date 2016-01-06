@@ -3,8 +3,8 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var jsmin = require('gulp-jsmin');
 
-gulp.task('index', function() {
-	return gulp.src('app/index.html')
+gulp.task('html', function() {
+	return gulp.src('app/*.html')
 	  .pipe(gulp.dest('dist'));
 });
 
@@ -38,8 +38,8 @@ gulp.task('extra-css', function () {
 gulp.task('extra', ['extra-js','extra-css']);
 
 // gulp.task('build', ['copy','js','style','browserify']);
-gulp.task('build', ['index', 'img', 'js','style', 'extra']);
+gulp.task('build', ['html', 'img', 'js','style', 'extra']);
 
 gulp.task('build:watch', function () {
-	gulp.watch(['**/*.html','app/**/*.*'],['index','js','style']);
+	gulp.watch(['**/*.html','app/**/*.*'],['html','js','style']);
 });
